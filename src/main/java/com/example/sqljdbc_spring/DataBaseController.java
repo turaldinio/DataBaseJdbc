@@ -8,8 +8,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/products")
 public class DataBaseController {
-    @Autowired
-    private DataBaseService dataBaseService;
+    private final DataBaseService dataBaseService;
+
+    public DataBaseController(DataBaseService dataBaseService) {
+        this.dataBaseService = dataBaseService;
+    }
 
     @GetMapping("fetch-product")
     public String doSomething(String name) {
