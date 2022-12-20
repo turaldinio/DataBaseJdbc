@@ -9,11 +9,11 @@ import org.springframework.util.Assert;
 @SpringBootTest
 class SqlJdbcSpringApplicationTests {
     @Autowired
-    private DataBase dataBase;
+    private DataBaseService dataBaseService;
 
     @Test
     void contextLoads() {
-        Assertions.assertEquals(dataBase.getProductName("Alexey"),"MacBook air 13");
+        Assertions.assertEquals(dataBaseService.getProductName("Alexey"),"MacBook air 13");
     }
 
 }
