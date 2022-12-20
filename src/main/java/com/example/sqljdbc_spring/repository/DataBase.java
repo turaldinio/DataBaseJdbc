@@ -1,4 +1,4 @@
-package com.example.sqljdbc_spring;
+package com.example.sqljdbc_spring.repository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ClassPathResource;

@@ -1,5 +1,6 @@
 package com.example.sqljdbc_spring;
 
+import com.example.sqljdbc_spring.service.DataBaseService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

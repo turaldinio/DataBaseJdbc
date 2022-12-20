@@ -1,6 +1,6 @@
-package com.example.sqljdbc_spring;
+package com.example.sqljdbc_spring.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import com.example.sqljdbc_spring.repository.DataBase;
 import org.springframework.stereotype.Service;
 
 @Service
