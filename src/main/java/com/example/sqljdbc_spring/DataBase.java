@@ -11,6 +11,12 @@ import java.util.stream.Collectors;
 
 @Repository
 public class DataBase {
+    private String select;
+
+    public DataBase() {
+        select = read("src/main/resources/select.sql");
+    }
+
     private static String read(String scriptFileName) {
         try (InputStream is = new ClassPathResource(scriptFileName).getInputStream();
              BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(is))) {
