@@ -4,13 +4,13 @@ databaseChangeLog:
       relativeToChangelogFile: true
 
   - include:
-      file: migrations/001-insert_in_customers.sql
-        relativeToChangelogFile: true
+      file: migrations/002-insert_in_customers.sql
+      relativeToChangelogFile: true
 
   - include:
-    file: migrations/003-create_orders.sql
+      file: migrations/003-create_orders.sql
       relativeToChangelogFile: true
 
   - include:
       file: migrations/004-insert_in_orders.sql
-        relativeToChangelogFile: true
+      relativeToChangelogFile: true
